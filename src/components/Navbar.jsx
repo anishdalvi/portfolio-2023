@@ -38,7 +38,7 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             <div className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full' }>
-                <ul className=' h-screen flex flex-col justify-center items-center bg-light-bg text-[#2A2E30] dark:bg-dark-bg2 dark:text-gray-300'>
+                <ul className=' h-screen flex flex-col justify-center items-center bg-light-bg text-dark dark:bg-dark-bg2 dark:text-dark'>
                         <li className='py-6 text-3xl'>Home</li>
                         <li className='py-6 text-3xl'>About</li>
                         <li className='py-6 text-3xl'>Skills</li>
@@ -52,7 +52,7 @@ const Navbar = () => {
                 <ul>
                     <li className='flex w-[180px] h-[60px] justify-between items-center ml-[-115px] hover:ml-[-15px] duration-300 '>
                         <a
-                            className='hover:bg-[#777] hover:text-white flex justify-between items-center w-full p-3'
+                            className='hover:bg-light-signature hover:text-white flex justify-between items-center w-full p-3'
                             href=""
                         >
                             <span className='font-bold'>LinkedIn</span>

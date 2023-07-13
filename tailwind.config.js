@@ -14,6 +14,14 @@ export default {
         'medium-dark' :"#2A2E30",
         'medium-dark2': "#353132",
         'medium-light': "#D9D9D9"
+      },
+      colors:{
+        'light-signature':"#0085FF",
+        'dark-signature':"#168FFF",
+        'light': "#BDBDBD",
+        'dark': "#000000",
+        'dark-sign': "#8B7221",
+        'light-sign': "#DABB54",
       }
     },
   },

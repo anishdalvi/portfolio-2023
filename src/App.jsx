@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import {Navbar, Home } from './components/index'
+import {Navbar, Home, About, Skills } from './components/index'
 
 
 function App() {
@@ -42,6 +42,8 @@ function App() {
           </button>
           <Navbar />
           <Home />
+          <About />
+          <Skills />
         </div>
       </>
     )
