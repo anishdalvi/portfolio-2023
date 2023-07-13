@@ -16,7 +16,10 @@ const Projects = () => {
                 </div>
 
                 <div className='grid sm:grid-col-2 md:grid-col-3'>
-                    <div className='shadow-lg'>
+                    <div className='shadow-lg shadow-[red] group container rounded-md flex justify-center items-center mx-auto conten-div'>
+
+                        {/* Hover Effect */}
+                        
                         <div>
                             <span>
 
