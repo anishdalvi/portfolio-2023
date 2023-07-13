@@ -1,0 +1,45 @@
+import React from 'react'
+
+const Projects = () => {
+
+    const themeCSS = 'bg-light-bg text-black-400 dark:bg-dark-bg2 dark:text-gray-400'
+
+    return (
+        <div name="projects" className={`${themeCSS} w-full md:h-screen px-10 `}>
+            {/* Container */}
+            <div className='max-w-[1000px] md:ml-10 lg:mx-auto p-4 flex flex-col'>
+                <div>
+                    <p className='text-4xl sm:text-5xl font-bold inline border-b-4 border-dark-sign dark:border-light-sign'>
+                        Projects
+                    </p>
+                    <p className='text-base sm:text-xl font-medium mt-3'>Checkout some of my projects</p>
+                </div>
+
+                <div className='grid sm:grid-col-2 md:grid-col-3'>
+                    <div className='shadow-lg'>
+                        <div>
+                            <span>
+
+                            </span>
+                            <div>
+                                <a href="">
+                                    <button>
+                                        
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button>
+
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    )
+}
+
+export default Projects
