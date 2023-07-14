@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProjectItem = ({ title, demo, github, imgSrc, tags }) => {
+const ProjectItem = ({ title, demo, github, tags }) => {
 
     const buttonCSS = 'text-center rounded-lg px-2 lg:px-3 py-1 lg:py-2 m-2 bg-slate-200 dark:bg-dark-bg2 font-bold text-lg md:text-lg lg:text-xl'
 
