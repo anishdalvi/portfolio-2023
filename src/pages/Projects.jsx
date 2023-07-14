@@ -1,8 +1,14 @@
 import React from 'react'
+import projects from '../data/projects'
+import { ProjectItem } from '../components'
+
 
 const Projects = () => {
 
     const themeCSS = 'bg-light-bg text-black-400 dark:bg-dark-bg2 dark:text-gray-400'
+
+
+    //console.log(projects);
 
     return (
         <div name="projects" className={`${themeCSS} w-full md:h-screen px-10 `}>
@@ -15,32 +21,34 @@ const Projects = () => {
                     <p className='text-base sm:text-xl font-medium mt-3'>Checkout some of my projects</p>
                 </div>
 
-                <div className='grid sm:grid-col-2 md:grid-col-3'>
-                    <div className='shadow-lg shadow-[red] group container rounded-md flex justify-center items-center mx-auto conten-div'>
+                {/* Grid Container */}
+                <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-8'>
 
-                        {/* Hover Effect */}
-                        
-                        <div>
-                            <span>
-
-                            </span>
-                            <div>
-                                <a href="">
-                                    <button>
-                                        
-                                    </button>
-                                </a>
-                                <a href="">
-                                    <button>
-
-                                    </button>
-                                </a>
+                    {
+                        projects.map((item, i) => (
+                            <div
+                                style={{ backgroundImage: `url(${item.img})` }}
+                                key={i}
+                                className='shadow-lg shadow-[#525151] group container rounded-md content-div'>
+                                {/* content-div is used for Hover feature */}
+                                <ProjectItem
+                                        title={item.title} 
+                                        demo={item.demo}
+                                        github={item.github}
+                                        tags={item.tags}
+                                >
+                                    
+                                </ProjectItem>
+                                
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        ))
+                    }
 
+                    
+                </div>
             </div>
+
+            
         </div>
     )
 }
