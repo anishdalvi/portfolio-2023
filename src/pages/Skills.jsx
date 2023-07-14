@@ -15,7 +15,7 @@ const Skills = () => {
                     </p>
                     <p className='text-base sm:text-xl font-medium mt-3'> These are the technologies I've worked with: </p>
                 </div>
-                <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 mt-10 gap-2'>
+                <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 mt-10 gap-2 z-1'>
                     { skillData.map((item, i) => (
                         <Skill key={i} src={item.icon} title={item.title} >
                             

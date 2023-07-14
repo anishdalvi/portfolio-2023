@@ -18,11 +18,11 @@ const Contact = () => {
                 </div>
 
                 
-                <input className='p-3 bg-dark-bg2 dark:bg-light placeholder:text-gray-400 dark:placeholder:text-gray-700 text-light-bg-color dark:text-dark-bg-color' type="text" placeholder='Name' name='name' required />
+                <input className='p-3 bg-dark-bg2 dark:bg-light placeholder:text-gray-400 dark:placeholder:text-gray-700 outline-none	text-light-bg-color dark:text-dark-bg-color' type="text" placeholder='Name' name='name' required />
 
-                <input className='p-3 my-3 bg-dark-bg2 dark:bg-light placeholder:text-gray-400 dark:placeholder:text-gray-700 text-light-bg-color dark:text-dark-bg-color' type="email" placeholder='Email' name='email' required />
+                <input className='p-3 my-3 outline-none	 bg-dark-bg2 dark:bg-light placeholder:text-gray-400 dark:placeholder:text-gray-700 text-light-bg-color dark:text-dark-bg-color' type="email" placeholder='Email' name='email' required />
 
-                <textarea className='p-3 bg-dark-bg2 dark:bg-light placeholder:text-gray-400 dark:placeholder:text-gray-700 text-light-bg-color dark:text-dark-bg-color ' rows='10' placeholder='Message' name='message' required />
+                <textarea className='p-3 bg-dark-bg2 dark:bg-light outline-none	 placeholder:text-gray-400 dark:placeholder:text-gray-700 text-light-bg-color dark:text-dark-bg-color ' rows='10' placeholder='Message' name='message' required />
                 
                 <button className='text-dark dark:text-light  hover:cursor-pointer sm:py-3 sm:px-6 flex items-center gap-2 font-bold border-black border-2 dark:border-light hover:bg-light-sign dark:hover:bg-[black] duration-200 py-1 px-3 group my-8 mx-auto'>
                         Submit 

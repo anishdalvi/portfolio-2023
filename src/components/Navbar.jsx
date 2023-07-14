@@ -4,6 +4,7 @@ import Logo_dark from '../assets/dark_logo.png'
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsInstagram } from 'react-icons/bs'
+import { Link } from 'react-scroll'
 
 const Navbar = ({ theme }) => {
 
@@ -15,7 +16,7 @@ const Navbar = ({ theme }) => {
     //console.log(theme);
 
     return (
-        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-light-bg text-black-400 dark:bg-dark-bg2 dark:text-gray-400'>
+        <div className='fixed w-full h-[60px] flex justify-between items-center px-4 bg-light-bg text-black-400 dark:bg-dark-bg2 dark:text-gray-400'>
             <div className="logo">
 
                 {
@@ -30,11 +31,32 @@ const Navbar = ({ theme }) => {
             {/* Menu items */}
             <div className='hidden md:block'>
                 <ul className='md:flex'>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Work</li>
-                    <li>Contact</li>
+                    <li>
+                        <Link to="home" smooth={true} duration={500}>
+                            Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="about" smooth={true} duration={500}>
+                            About
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="skills" smooth={true} duration={500}>
+                            Skills
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="projects" smooth={true} duration={500}>
+                            Projects
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="contact" smooth={true} duration={500}>
+                            Contact
+                        </Link>
+                    </li>
+                    
                 </ul>
             </div>
 
@@ -45,13 +67,33 @@ const Navbar = ({ theme }) => {
             </div>
 
             {/* Mobile Menu */}
-            <div className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full' }>
+            <div className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full z-10' }>
                 <ul className=' h-screen flex flex-col justify-center items-center bg-light-bg text-dark dark:bg-dark-bg2 dark:text-light'>
-                        <li className='py-6 text-3xl'>Home</li>
-                        <li className='py-6 text-3xl'>About</li>
-                        <li className='py-6 text-3xl'>Skills</li>
-                        <li className='py-6 text-3xl'>Work</li>
-                        <li className='py-6 text-3xl'>Contact</li>
+                        <li className='py-6 text-3xl'>
+                            <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+                                Home
+                            </Link>
+                        </li>
+                        <li className='py-6 text-3xl'>
+                            <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+                                About
+                            </Link>
+                        </li>
+                        <li className='py-6 text-3xl'>
+                            <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+                                Skills
+                            </Link>
+                        </li>
+                        <li className='py-6 text-3xl'>
+                            <Link onClick={handleClick} to="projects" smooth={true} duration={500}>
+                                Projects
+                            </Link>
+                        </li>
+                        <li className='py-6 text-3xl'>
+                            <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+                                Contact
+                            </Link>
+                        </li>
                 </ul>
             </div>
 

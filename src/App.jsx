@@ -3,6 +3,7 @@ import './App.css'
 import { Navbar } from './components/index'
 import {Home, About, Skills, Projects, Contact } from './pages/index'
 
+
 function App() {
   
   const [theme, setTheme] = useState(null)
