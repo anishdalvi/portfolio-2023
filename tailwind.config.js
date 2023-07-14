@@ -22,7 +22,10 @@ export default {
         'dark': "#000000",
         'dark-sign': "#8B7221",
         'light-sign': "#DABB54",
-      }
+        'dark-bg-color' : "#242424",
+        'light-bg-color' : "#EBE6E4",
+      },
+      
     },
   },
   plugins: [],

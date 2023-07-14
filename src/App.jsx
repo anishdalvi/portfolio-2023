@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import { Navbar } from './components/index'
-import {Home, About, Skills, Projects } from './pages/index'
+import {Home, About, Skills, Projects, Contact } from './pages/index'
 
 function App() {
   
@@ -45,6 +45,7 @@ function App() {
           <About />
           <Skills />
           <Projects />
+          <Contact />
         </div>
       </>
     )

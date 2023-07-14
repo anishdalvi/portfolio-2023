@@ -26,21 +26,33 @@
   background-size: cover;
   background-position: center;
   height: 250px;
-  
-  -webkit-transition: all 0.5s ease-in-out;
+ /*  background-size: 100%;
+  -webkit-transition: all 0.3s ease-in-out; */
+
+}
+
+.content-div-dark{
+  height: 450px;
 }
 
 .content-div:hover{
+
   /* background-image: linear-gradient(
     to right,
     rgba( 112, 157, 255, 0.8),
     hsla(242, 74%, 61%, 0.8)
   )!important;  */
-  /* background-image: linear-gradient(
+  
+  background-image: linear-gradient(
     to top,
-    rgba(48, 49, 50, 0.1),
-    rgba(80, 82, 85, 0.4)
-  )!important; */
+    #8B7221,
+    #8B7221
+  )!important;
+
+  /* background-size: 200%; */
+  
+
+  
 
 
   
