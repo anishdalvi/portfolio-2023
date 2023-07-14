@@ -1,22 +1,30 @@
 import React, { useEffect, useState } from 'react'
-import Logo from '../assets/dark_logo.png'
-import { FaBars, FaTimes, FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa'
+import Logo_light from '../assets/light_logo.png'
+import Logo_dark from '../assets/dark_logo.png'
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsInstagram } from 'react-icons/bs'
 
-const Navbar = () => {
+const Navbar = ({ theme }) => {
 
     const [nav, setnav] = useState(false)
     const handleClick = () => {
         setnav(!nav)
     }
 
-    
+    //console.log(theme);
 
     return (
         <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-light-bg text-black-400 dark:bg-dark-bg2 dark:text-gray-400'>
             <div className="logo">
-                <img src={Logo} alt="Logo" className='w-[50px]' />
+
+                {
+                    theme === 'light' ? <img src={Logo_dark} alt="Logo" className='w-[50px]' />
+                    : <img src={Logo_light} alt="Logo" className='w-[50px]' /> 
+                }
+                
+                   
+                
             </div>
 
             {/* Menu items */}

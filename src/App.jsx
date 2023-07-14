@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import {Navbar, Home, About, Skills, Projects } from './components/index'
-
+import { Navbar } from './components/index'
+import {Home, About, Skills, Projects } from './pages/index'
 
 function App() {
   
@@ -40,7 +40,7 @@ function App() {
             { theme === 'dark' ? "Dark" : "Light" }
     
           </button>
-          <Navbar />
+          <Navbar theme={theme} />
           <Home />
           <About />
           <Skills />
