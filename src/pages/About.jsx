@@ -21,12 +21,12 @@ const About = () => {
                 <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
                     <div className='sm:text-right text-3xl sm:text-4xl font-bold'>
                         <p>
-                            Hi, nice to meet you. Please take a look around
+                            Hi, nice to meet you. Please take a look around.
                         </p>
                     </div>
                     <div className="font-medium">
                         <p>
-                        Keen Coder. Currently, I am pursuing BE in Information Technology from Vidyavardhini's College of Engineering and Technology, Vasai. I have made many websites using the skills mentioned below and lately I have started building RESPONSIVE websites. I have created many posters and designs using Photoshop and Adobe Illustrator. 
+                        Keen Coder. Currently, I am pursuing BE in Information Technology from Vidyavardhini's College of Engineering and Technology, Vasai. I have made many websites using the skills mentioned below and lately I have started building RESPONSIVE websites. I have created many posters and designs using Photoshop and Adobe Illustrator. Also.....
                         </p>
                     </div>
                 </div>
