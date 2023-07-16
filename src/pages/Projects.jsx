@@ -11,7 +11,7 @@ const Projects = () => {
     //console.log(projects);
 
     return (
-        <div name="projects" className={`${themeCSS} w-full md:h-screen px-10`}>
+        <div name="projects" className={`${themeCSS} w-full h-fit px-10 pt-[130px]`}>
             {/* Container */}
             <div className='max-w-[1000px] md:ml-10 lg:mx-auto p-4 flex flex-col'>
                 <div>

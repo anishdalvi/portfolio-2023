@@ -6,7 +6,7 @@ const Skills = () => {
 
     const themeCSS = 'bg-light-bg text-black-400 dark:bg-dark-bg2 dark:text-gray-400'
     return (
-        <div name='skills' className={`${themeCSS} w-full h-screen px-10 md:pt-[160px] block`}>
+        <div name='skills' className={`${themeCSS} w-full px-10 h-fit pt-[130px] `}>
             {/* Container */}
             <div className='max-w-[1000px] md:ml-10 lg:mx-auto p-4 flex flex-col justify-center w-full h-full'>
                 <div>
