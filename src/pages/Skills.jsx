@@ -6,7 +6,7 @@ const Skills = () => {
 
     const themeCSS = 'bg-light-bg text-black-400 dark:bg-dark-bg2 dark:text-gray-400'
     return (
-        <div name='skills' className={`${themeCSS} w-full h-screen px-10`}>
+        <div name='skills' className={`${themeCSS} w-full h-screen px-10 md:pt-[160px] block`}>
             {/* Container */}
             <div className='max-w-[1000px] md:ml-10 lg:mx-auto p-4 flex flex-col justify-center w-full h-full'>
                 <div>
@@ -15,11 +15,11 @@ const Skills = () => {
                     </p>
                     <p className='text-base sm:text-xl font-medium mt-3'> These are the technologies I've worked with: </p>
                 </div>
-                <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 mt-10 gap-2 z-1'>
+                <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 mt-10 gap-2'>
                     { skillData.map((item, i) => (
-                        <Skill key={i} src={item.icon} title={item.title} >
+                         <Skill key={i} src={item.icon} title={item.title} >
                             
-                        </Skill>
+                         </Skill>
                         
                     )) }
                 </div>

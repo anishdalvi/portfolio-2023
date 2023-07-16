@@ -5,7 +5,7 @@ const About = () => {
     const themeCSS = 'bg-light-bg text-black-400 dark:bg-dark-bg2 dark:text-gray-400'
 
     return (
-        <div name='about' className={`w-full h-screen ${themeCSS}`}>
+        <div name='about' className={`w-full h-screen ${themeCSS} pb-40 sm:pb-0`}>
             <div className="flex flex-col justify-center items-center w-full h-full px-10">
                 <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
                     <div className='sm:text-right pb-8 pl-4'>
