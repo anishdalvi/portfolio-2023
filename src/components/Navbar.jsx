@@ -37,7 +37,7 @@ const Navbar = ({ theme }) => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="about" smooth={true} duration={500}>
+                        <Link to="about" smooth={true} duration={800}>
                             About
                         </Link>
                     </li>
