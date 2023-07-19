@@ -16,59 +16,60 @@ const Navbar = ({ theme }) => {
     //console.log(theme);
 
     return (
-        <div className='fixed w-full h-[60px] flex justify-between items-center px-4 bg-light-bg text-black-400 dark:bg-dark-bg2 dark:text-gray-400'>
-            <div className="logo">
+        <div className='fixed w-full h-[60px] flex justify-between items-center bg-light-bg text-black-400 dark:bg-dark-bg2 dark:text-gray-400 z-50'>
+            <div className="navbar fixed w-full h-[60px] flex justify-between items-center bg-light-bg dark:bg-dark-bg2 px-4 text-black-400   drop-shadow-xl">
+                <div className="logo">
 
-                {
-                    theme === 'light' ? <img src={Logo_dark} alt="Logo" className='w-[50px]' />
-                    : <img src={Logo_light} alt="Logo" className='w-[50px]' /> 
-                }
-                
-                   
-                
-            </div>
+                    {
+                        theme === 'light' ? <img src={Logo_dark} alt="Logo" className='w-[50px]' />
+                            : <img src={Logo_light} alt="Logo" className='w-[50px]' />
+                    }
 
-            {/* Menu items */}
-            <div className='hidden md:block'>
-                <ul className='md:flex'>
-                    <li>
-                        <Link to="home" smooth={true} duration={500}>
-                            Home
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="about" smooth={true} duration={800}>
-                            About
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="skills" smooth={true} duration={500}>
-                            Skills
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="projects" smooth={true} duration={500}>
-                            Projects
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="contact" smooth={true} duration={500}>
-                            Contact
-                        </Link>
-                    </li>
-                    
-                </ul>
-            </div>
 
-            {/* Hamburger */}
-            <div className='md:hidden z-20' onClick={handleClick}>
-                {!nav ? <FaBars /> : <FaTimes /> }
-                
-            </div>
 
-            {/* Mobile Menu */}
-            <div className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full' }>
-                <ul className=' h-screen flex flex-col justify-center items-center bg-light-bg text-dark dark:bg-dark-bg2 dark:text-light'>
+                </div>
+
+                {/* Menu items */}
+                <div className='hidden md:block'>
+                    <ul className='md:flex'>
+                        <li>
+                            <Link to="home" smooth={true} duration={500}>
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="about" smooth={true} duration={500}>
+                                About
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="skills" smooth={true} duration={500}>
+                                Skills
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="projects" smooth={true} duration={500}>
+                                Projects
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="contact" smooth={true} duration={500}>
+                                Contact
+                            </Link>
+                        </li>
+
+                    </ul>
+                </div>
+
+                {/* Hamburger */}
+                <div className='md:hidden z-20' onClick={handleClick}>
+                    {!nav ? <FaBars /> : <FaTimes />}
+
+                </div>
+
+                {/* Mobile Menu */}
+                <div className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full'}>
+                    <ul className=' h-screen flex flex-col justify-center items-center bg-light-bg text-dark dark:bg-dark-bg2 dark:text-light'>
                         <li className='py-6 text-3xl'>
                             <Link onClick={handleClick} to="home" smooth={true} duration={500}>
                                 Home
@@ -94,11 +95,12 @@ const Navbar = ({ theme }) => {
                                 Contact
                             </Link>
                         </li>
-                </ul>
+                    </ul>
+                </div>
             </div>
 
             {/* Social Icons */}
-            <div className='hidden md:flex fixed flex-col top-[35%] left-0'>
+            <div className='hidden md:flex fixed flex-col top-[35%] left-0 '>
                 <ul>
                     <li className='flex w-[180px] h-[60px] justify-between items-center ml-[-115px] hover:ml-[-15px] duration-300 '>
                         <a
@@ -136,10 +138,10 @@ const Navbar = ({ theme }) => {
                             <BsInstagram size={30} />
                         </a>
                     </li>
-                    
+
                 </ul>
             </div>
-            
+
         </div>
     )
 }
