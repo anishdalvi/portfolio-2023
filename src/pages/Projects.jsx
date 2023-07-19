@@ -3,6 +3,7 @@ import projects from '../data/projects'
 import { ProjectItem } from '../components'
 
 
+
 const Projects = () => {
 
     const themeCSS = 'bg-light-bg text-black-400 dark:bg-dark-bg2 dark:text-gray-400'
@@ -22,34 +23,34 @@ const Projects = () => {
                 </div>
 
                 {/* Grid Container */}
-                <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-8 mt-10'>
+                <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-8 mt-10'>
 
                     {
                         projects.map((item, i) => (
                             <div
-                                style={{ backgroundImage: `url(${item.img})`}}
+                                style={{ backgroundImage: `url(${item.img})` }}
                                 key={i}
                                 className='shadow-lg shadow-[#525151] group container rounded-md content-div flex justify-center text-center'>
                                 {/* content-div is used for Hover feature */}
                                 <ProjectItem
-                                        title={item.title} 
-                                        demo={item.demo}
-                                        github={item.github}
-                                        tags={item.tags}
+                                    title={item.title}
+                                    demo={item.demo}
+                                    github={item.github}
+                                    tags={item.tags}
                                 >
-                                    
+
                                 </ProjectItem>
-                                
-                                
+
+
                             </div>
                         ))
                     }
 
-                    
+
                 </div>
             </div>
 
-            
+
         </div>
     )
 }

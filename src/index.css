@@ -37,27 +37,32 @@
 
 .content-div:hover{
 
-  /* background-image: linear-gradient(
-    to right,
-    rgba( 112, 157, 255, 0.8),
-    hsla(242, 74%, 61%, 0.8)
-  )!important;  */
-  
-  background-image: linear-gradient(
-    to top,
-    #8B7221,
-    #8B7221
-  )!important;
+/* background-image: linear-gradient(
+  to right,
+  rgba( 112, 157, 255, 0.8),
+  hsla(242, 74%, 61%, 0.8)
+)!important;  */
 
-  /* background-size: 200%; */
-  
-
-  
+/* background-image: linear-gradient(
+  to top,
+  #8B7221,
+  #8B7221
+)!important; */
 
 
-  
- 
-  
+/* Mostly */
+background-image: linear-gradient(
+        to right top,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.1)
+) !important;
+
+
+
+
+/* filter: blur(1px);
+-webkit-filter: blur(1px); */
+
   
 }
 
