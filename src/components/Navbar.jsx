@@ -107,7 +107,7 @@ const Navbar = ({ theme }) => {
                     <ul key={social.title}>
                         <li className='flex w-[180px] h-[60px] justify-between items-center ml-[-115px] hover:ml-[-15px] duration-300' >
                             <a
-                                className={`hover:${social.bgColor} hover:text-white flex justify-between items-center w-full p-3 dark:`}
+                                className={`hover:${social.bgColor} hover:text-white flex justify-between items-center w-full p-3`}
                                 href=""
                             >
                                 <span className='font-bold'>
