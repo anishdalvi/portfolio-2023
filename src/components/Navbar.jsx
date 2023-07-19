@@ -14,15 +14,21 @@ const Navbar = ({ theme }) => {
 
     //console.log(theme);
 
+    const menuLinkHover = 'hover:bg-light-sign py-1 duration-300 rounded-md hover:dark:bg-light-sign hover:dark:text-dark-bg-color'
+
+    const menuLinkMobileHover = 'hover:bg-light-sign duration-300 rounded-md hover:dark:bg-light-sign hover:dark:text-dark-bg-color py-3 text-3xl'
+
     return (
         <div className='fixed w-full h-[60px] flex justify-between items-center bg-light-bg text-black-400 dark:bg-dark-bg2 dark:text-gray-400 z-50'>
             <div className="navbar fixed w-full h-[60px] flex justify-between items-center bg-light-bg dark:bg-dark-bg2 px-4 text-black-400   drop-shadow-xl">
-                <div className="logo">
+                <div className="logo cursor-pointer">
 
-                    {
-                        theme === 'light' ? <img src={Logo_dark} alt="Logo" className='w-[50px]' />
-                            : <img src={Logo_light} alt="Logo" className='w-[50px]' />
-                    }
+                    <Link to='home' smooth={true} duration={500}>
+                        {
+                            theme === 'light' ? <img src={Logo_dark} alt="Logo" className='w-[50px]' />
+                                : <img src={Logo_light} alt="Logo" className='w-[50px]' />
+                        }
+                    </Link>
 
 
 
@@ -30,38 +36,38 @@ const Navbar = ({ theme }) => {
 
                 {/* Menu items */}
                 <div className='hidden md:block'>
-                    <ul className='md:flex'>
-                        <li>
-                            <Link to="home" smooth={true} duration={500}>
+                    <ul className='md:flex gap-2'>
+                        <Link to="home" smooth={true} duration={500}>
+                            <li className={`${menuLinkHover}`}>
                                 Home
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="about" smooth={true} duration={500}>
+                            </li>
+                        </Link>
+                        <Link to="about" smooth={true} duration={500}>
+                            <li className={`${menuLinkHover}`}>
                                 About
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="skills" smooth={true} duration={500}>
+                            </li>
+                        </Link>
+                        <Link to="skills" smooth={true} duration={500}>
+                            <li className={`${menuLinkHover}`}>
                                 Skills
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="projects" smooth={true} duration={500}>
+                            </li>
+                        </Link>
+                        <Link to="projects" smooth={true} duration={500}>
+                            <li className={`${menuLinkHover}`}>
                                 Projects
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="contact" smooth={true} duration={500}>
+                            </li>
+                        </Link>
+                        <Link to="contact" smooth={true} duration={500}>
+                            <li className={`${menuLinkHover}`}>
                                 Contact
-                            </Link>
-                        </li>
+                            </li>
+                        </Link>
 
                     </ul>
                 </div>
 
                 {/* Hamburger */}
-                <div className='md:hidden z-20' onClick={handleClick}>
+                <div className='md:hidden z-20 cursor-pointer' onClick={handleClick}>
                     {!nav ? <FaBars /> : <FaTimes />}
 
                 </div>
@@ -69,31 +75,31 @@ const Navbar = ({ theme }) => {
                 {/* Mobile Menu */}
                 <div className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full'}>
                     <ul className=' h-screen flex flex-col justify-center items-center bg-light-bg text-dark dark:bg-dark-bg2 dark:text-light'>
-                        <li className='py-6 text-3xl'>
-                            <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+                        <Link onClick={handleClick} to="home" smooth={true} duration={500} className='py-3'>
+                            <li className={`${menuLinkMobileHover}`}>
                                 Home
-                            </Link>
-                        </li>
-                        <li className='py-6 text-3xl'>
-                            <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+                            </li>
+                        </Link>
+                        <Link onClick={handleClick} to="about" smooth={true} duration={500} className='py-3'>
+                            <li className={`${menuLinkMobileHover}`}>
                                 About
-                            </Link>
-                        </li>
-                        <li className='py-6 text-3xl'>
-                            <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+                            </li>
+                        </Link>
+                        <Link onClick={handleClick} to="skills" smooth={true} duration={500} className='py-3'>
+                            <li className={`${menuLinkMobileHover}`}>
                                 Skills
-                            </Link>
-                        </li>
-                        <li className='py-6 text-3xl'>
-                            <Link onClick={handleClick} to="projects" smooth={true} duration={500}>
+                            </li>
+                        </Link>
+                        <Link onClick={handleClick} to="projects" smooth={true} duration={500} className='py-3'>
+                            <li className={`${menuLinkMobileHover}`}>
                                 Projects
-                            </Link>
-                        </li>
-                        <li className='py-6 text-3xl'>
-                            <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+                            </li>
+                        </Link>
+                        <Link onClick={handleClick} to="contact" smooth={true} duration={500} className='py-3'>
+                            <li className={`${menuLinkMobileHover}`}>
                                 Contact
-                            </Link>
-                        </li>
+                            </li>
+                        </Link>
                     </ul>
                 </div>
             </div>
@@ -124,17 +130,17 @@ const Navbar = ({ theme }) => {
 
                 <ul className='hidden'>
                     <li className='hover:bg-github  hover:text-white p-3'>
-                        <FaGithub size={30} />
+                        <FaGithub />
                     </li>
 
                     <li className='hover:bg-linkedin  hover:text-white p-3'>
-                        <FaGithub size={30} />
+                        <FaGithub />
                     </li>
                     <li className='hover:bg-instagram  hover:text-white p-3'>
-                        <FaGithub size={30} />
+                        <FaGithub />
                     </li>
                     <li className='hover:bg-email  hover:text-white p-3'>
-                        <FaGithub size={30} />
+                        <FaGithub />
                     </li>
                 </ul>
 
