@@ -5,6 +5,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsInstagram } from 'react-icons/bs'
 import { Link } from 'react-scroll'
+import { socials } from '../data/socials'
 
 const Navbar = ({ theme }) => {
 
@@ -101,45 +102,34 @@ const Navbar = ({ theme }) => {
 
             {/* Social Icons */}
             <div className='hidden md:flex fixed flex-col top-[35%] left-0 '>
-                <ul>
-                    <li className='flex w-[180px] h-[60px] justify-between items-center ml-[-115px] hover:ml-[-15px] duration-300 '>
-                        <a
-                            className='hover:bg-light-signature hover:text-white flex justify-between items-center w-full p-3'
-                            href=""
-                        >
-                            <span className='font-bold'>LinkedIn</span>
-                            <FaLinkedin size={30} />
-                        </a>
-                    </li>
-                    <li className='flex w-[180px] h-[60px] justify-between items-center ml-[-115px] hover:ml-[-15px] duration-300 '>
-                        <a
-                            className='hover:bg-[#777] hover:text-white flex justify-between items-center w-full p-3'
-                            href=""
-                        >
-                            <span className='font-bold'>Github</span>
-                            <FaGithub size={30} />
-                        </a>
-                    </li>
-                    <li className='flex w-[180px] h-[60px] justify-between items-center ml-[-115px] hover:ml-[-15px] duration-300 '>
-                        <a
-                            className='hover:bg-[#777] hover:text-white flex justify-between items-center w-full p-3'
-                            href=""
-                        >
-                            <span className='font-bold'>E-Mail</span>
-                            <HiOutlineMail size={30} />
-                        </a>
-                    </li>
-                    <li className='flex w-[180px] h-[60px] justify-between items-center ml-[-115px] hover:ml-[-20px] duration-300 '>
-                        <a
-                            className='hover:bg-[#777] hover:text-white flex justify-between items-center w-full p-3'
-                            href=""
-                        >
-                            <span className='font-bold'>Instagram</span>
-                            <BsInstagram size={30} />
-                        </a>
-                    </li>
 
-                </ul>
+                {socials.map((social => (
+                    <ul key={social.title}>
+                        <li className='flex w-[180px] h-[60px] justify-between items-center ml-[-115px] hover:ml-[-15px] duration-300' >
+                            <a
+                                className={`hover:${social.bgColor} hover:text-white flex justify-between items-center w-full p-3 dark:`}
+                                href=""
+                            >
+                                <span className='font-bold'>
+                                    {social.title}
+                                </span>
+
+                                {social.icon}
+                            </a>
+
+                        </li>
+                    </ul>
+
+                )))}
+
+                {/* Below code is kept to solve social bg color glitch */}
+
+                {/* <ul>
+                    <li className='hover:bg-[#B23121]  hover:text-white flex justify-between items-center w-full p-3 dark:'>
+                        <FaGithub size={30} />
+                    </li>
+                </ul> */}
+
             </div>
 
         </div>
