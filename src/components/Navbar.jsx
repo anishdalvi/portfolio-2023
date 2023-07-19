@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Logo_light from '../assets/light_logo.png'
 import Logo_dark from '../assets/dark_logo.png'
 import { FaBars, FaTimes, FaGithub } from 'react-icons/fa'

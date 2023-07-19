@@ -3,6 +3,7 @@ import './App.css'
 import { Navbar } from './components/index'
 import { Home, About, Skills, Projects, Contact } from './pages/index'
 import { motion, useScroll, useSpring } from "framer-motion";
+import { MdOutlineDarkMode, MdLightMode } from 'react-icons/md'
 
 
 
@@ -48,14 +49,16 @@ function App() {
           className="fixed top-0 left-0 h-1 bg-dark-sign dark:bg-light-sign right-0 z-[60] origin-top-left"
           style={{ scaleX }}
         />
+
         <button
           type='button'
           onClick={handleTheme}
-          className='fixed z-1 bottom-2 right-2 bg-indigo-200 text-lg p-1 rounded-md'
+          className='fixed z-1 bottom-4 right-4 bg-dark-bg2 text-light-sign dark:bg-light dark:text-dark-bg-color text-xl p-2 rounded-md'
         >
-          {theme === 'dark' ? "Dark" : "Light"}
+          {theme === 'dark' ? <MdLightMode /> : <MdOutlineDarkMode />}
 
         </button>
+
         <Navbar theme={theme} />
         <Home />
         <About />
