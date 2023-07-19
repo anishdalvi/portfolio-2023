@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Logo_light from '../assets/light_logo.png'
 import Logo_dark from '../assets/dark_logo.png'
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
-import { HiOutlineMail } from 'react-icons/hi'
-import { BsInstagram } from 'react-icons/bs'
+import { FaBars, FaTimes, FaGithub } from 'react-icons/fa'
 import { Link } from 'react-scroll'
 import { socials } from '../data/socials'
 
@@ -107,7 +105,7 @@ const Navbar = ({ theme }) => {
                     <ul key={social.title}>
                         <li className='flex w-[180px] h-[60px] justify-between items-center ml-[-115px] hover:ml-[-15px] duration-300' >
                             <a
-                                className={`hover:${social.bgColor} hover:text-white flex justify-between items-center w-full p-3`}
+                                className={`hover:bg-${social.bgColor} hover:text-white flex justify-between items-center w-full p-3 hover:bg-${social.bgColor}`}
                                 href=""
                             >
                                 <span className='font-bold'>
@@ -124,11 +122,21 @@ const Navbar = ({ theme }) => {
 
                 {/* Below code is kept to solve social bg color glitch */}
 
-                {/* <ul>
-                    <li className='hover:bg-[#B23121]  hover:text-white flex justify-between items-center w-full p-3 dark:'>
+                <ul className='hidden'>
+                    <li className='hover:bg-github  hover:text-white p-3'>
                         <FaGithub size={30} />
                     </li>
-                </ul> */}
+
+                    <li className='hover:bg-linkedin  hover:text-white p-3'>
+                        <FaGithub size={30} />
+                    </li>
+                    <li className='hover:bg-instagram  hover:text-white p-3'>
+                        <FaGithub size={30} />
+                    </li>
+                    <li className='hover:bg-email  hover:text-white p-3'>
+                        <FaGithub size={30} />
+                    </li>
+                </ul>
 
             </div>
 

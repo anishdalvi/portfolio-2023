@@ -1,4 +1,4 @@
-import { FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 
@@ -6,21 +6,21 @@ export const socials = [
   {
     title: "LinkedIn",
     icon: <FaLinkedin size={30} />,
-    bgColor: "bg-light-signature",
+    bgColor: "linkedin",
   },
   {
     title: "Github",
     icon: <FaGithub size={30} />,
-    bgColor: "bg-[#17202A]",
+    bgColor: "github",
   },
   {
     title: "E-Mail",
     icon: <HiOutlineMail size={30} />,
-    bgColor: "bg-[#D44638]",
+    bgColor: "email",
   },
   {
     title: "Instagram",
     icon: <BsInstagram size={30} />,
-    bgColor: "bg-[#c13584]",
+    bgColor: "instagram",
   },
 ];
