@@ -1,6 +1,8 @@
 import React from 'react'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import AnishImg from '../assets/anish_img2.jpg'
+import { socials, socialsMobile } from '../data/socials'
+import { FaGithub } from 'react-icons/fa'
 
 
 const Home = () => {
@@ -11,7 +13,7 @@ const Home = () => {
         <div name='home' className={`w-full h-screen ${themeCSS}`} >
 
             {/* Container */}
-            <div className="max-w-[1000px] md:ml-10 lg:mx-auto px-10 flex items-center flex-col-reverse gap-5 sm:gap-10 md:gap-20 sm:flex-row-reverse sm:items-center justify-center h-full pt-20 sm-pt-0">
+            <div className="max-w-[1000px] md:ml-10 lg:mx-auto px-10 flex items-center flex-col-reverse gap-10 sm:gap-10 md:gap-20 sm:flex-row-reverse sm:items-center justify-center h-full pt-36 sm:pt-0">
                 <div className="intro-text">
                     <p className='text-lg sm:text-xl font-extralight d2:text-lg dark:text-light'>Hello, this is</p>
                     <h1 className='text-5xl sm:text-7xl d0:text-5xl d1:text-5xl d2:text-6xl  font-bold text-dark-sign dark:text-light-sign '>Anish Dalvi</h1>
@@ -32,6 +34,37 @@ const Home = () => {
                 <div className="intro-img">
                     <div className="anish-img w-[280px] d0:w-[260px] d1:w-[280px] md:w-[300px] lg:w-[350px]  ">
                         <img src={AnishImg} alt="Image" className='w-full rounded-full' />
+
+                        <div className='flex md:hidden mt-2 justify-center gap-2 '>
+                            {socialsMobile.map(social => (
+                                <ul key={social.title}>
+                                    <li className={`hover:bg-light-sign rounded-full p-3 duration-300 text-2xl 
+                                    text-${social.color || social.bgColor}
+                                    hover:text-dark-bg-color`}>
+                                        {social.icon}
+                                    </li>
+                                </ul>
+                            ))}
+                        </div>
+
+                        {/* Below code is kept to solve social bg color glitch */}
+
+                        <ul className='hidden'>
+                            <li className='text-github'>
+                                <FaGithub />
+                            </li>
+
+                            <li className='text-linkedin'>
+                                <FaGithub />
+                            </li>
+                            <li className='text-instagram'>
+                                <FaGithub />
+                            </li>
+                            <li className='text-email'>
+                                <FaGithub />
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
 

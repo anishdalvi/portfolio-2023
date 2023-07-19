@@ -24,3 +24,27 @@ export const socials = [
     bgColor: "instagram",
   },
 ];
+
+export const socialsMobile = [
+  {
+    title: "LinkedIn",
+    icon: <FaLinkedin />,
+    bgColor: "linkedin",
+  },
+  {
+    title: "Github",
+    icon: <FaGithub />,
+    bgColor: "github",
+    color: "#EBE6E4",
+  },
+  {
+    title: "E-Mail",
+    icon: <HiOutlineMail />,
+    bgColor: "email",
+  },
+  {
+    title: "Instagram",
+    icon: <BsInstagram />,
+    bgColor: "instagram",
+  },
+];

@@ -25,6 +25,10 @@ export default {
         "light-sign": "#DABB54",
         "dark-bg-color": "#242424",
         "light-bg-color": "#EBE6E4",
+        linkedin: "#0085FF",
+        github: "#17202A",
+        email: "#D44638",
+        instagram: "#c13584",
       },
       screens: {
         d0: {
@@ -36,8 +40,8 @@ export default {
           max: "870px",
         },
         d2: {
-          min: "870px",
-          max: "950px",
+          min: "871px",
+          max: "991px",
         },
       },
     },
