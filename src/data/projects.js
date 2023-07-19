@@ -17,7 +17,7 @@ export default [
     },
     {
         id:2,
-        title: 'Book Reommender',
+        title: 'Book Recommender',
         img: "https://i.ytimg.com/vi/BI6izmft-LU/maxresdefault.jpg",
         github: "https://github.com/anishdalvi/book-recommender.git",
         demo:"https://www.google.com/",
