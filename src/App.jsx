@@ -53,7 +53,7 @@ function App() {
         <button
           type='button'
           onClick={handleTheme}
-          className='fixed z-1 bottom-4 right-4 bg-dark-bg2 text-light-sign dark:bg-light dark:text-dark-bg-color text-xl p-2 rounded-md'
+          className='fixed z-1 bottom-4 right-2 bg-dark-bg2 text-light dark:bg-light dark:text-dark-bg-color text-xl p-2 rounded-md'
         >
           {theme === 'dark' ? <MdLightMode /> : <MdOutlineDarkMode />}
 
