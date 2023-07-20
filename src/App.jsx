@@ -9,7 +9,7 @@ import { MdOutlineDarkMode, MdLightMode } from 'react-icons/md'
 
 function App() {
 
-  const [theme, setTheme] = useState(null)
+  const [theme, setTheme] = useState(localStorage.theme)
   const { scrollYProgress } = useScroll();
 
   const scaleX = useSpring(scrollYProgress, {
@@ -19,12 +19,16 @@ function App() {
   });
 
   useEffect(() => {
-    if (window.matchMedia('(prefer-color-scheme: dark)').matches) {
+
+    const data = window.localStorage.getItem('theme');
+    if (data !== null) setTheme(data);
+
+    /* if (window.matchMedia('(prefer-color-scheme: dark)').matches) {
       setTheme('dark')
     }
     else {
       setTheme('light')
-    }
+    } */
   }, [])
 
   useEffect(() => {
@@ -34,6 +38,9 @@ function App() {
     else {
       document.documentElement.classList.remove('dark')
     }
+
+    localStorage.setItem('theme', theme);
+
   }, [theme])
 
   const handleTheme = () => {
