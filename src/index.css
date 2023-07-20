@@ -19,6 +19,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #3f3f3f;
+    
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #DABB54;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #8B7221;
+    cursor: pointer;
 }
 
 
