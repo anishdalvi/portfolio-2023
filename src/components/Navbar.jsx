@@ -78,7 +78,7 @@ const Navbar = ({ theme }) => {
                 </div>
 
                 {/* Mobile Menu */}
-                <div className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full'}>
+                <div className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full '}>
                     <ul className=' h-screen flex flex-col justify-center items-center bg-light-bg text-dark dark:bg-dark-bg2 dark:text-light'>
                         <Link onClick={handleClick} to="home" smooth={true} duration={500} className='py-3'>
                             <li className={`${menuLinkMobileHover}`}>

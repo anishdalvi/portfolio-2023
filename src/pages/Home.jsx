@@ -13,7 +13,7 @@ const Home = () => {
         <div name='home' className={`w-full h-screen ${themeCSS}`} >
 
             {/* Container */}
-            <div className="max-w-[1000px] md:ml-10 lg:mx-auto px-10 flex items-center flex-col-reverse gap-10 sm:gap-10 md:gap-20 sm:flex-row-reverse sm:items-center justify-center h-full pt-36 sm:pt-0">
+            <div className="max-w-[1000px] md:ml-10 lg:mx-auto px-10 flex items-center flex-col-reverse gap-10 sm:gap-10 md:gap-20 sm:flex-row-reverse sm:items-center justify-center h-full pt-10 sm:pt-0">
                 <div className="intro-text">
                     <p className='text-lg sm:text-xl font-extralight d2:text-lg dark:text-light'>Hello, this is</p>
                     <h1 className='text-5xl sm:text-7xl d0:text-5xl d1:text-5xl d2:text-6xl  font-bold text-dark-sign dark:text-light-sign '>Anish Dalvi</h1>
