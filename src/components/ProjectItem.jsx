@@ -2,45 +2,76 @@ import React from 'react'
 import { BiLinkExternal } from 'react-icons/bi'
 import { FiGithub } from 'react-icons/fi'
 
-const ProjectItem = ({ title, demo, github, tags }) => {
+const ProjectItem = ({ title, demo, github, tags, img }) => {
 
-    const buttonCSS = 'text-center rounded-lg px-2 lg:px-3 py-1 lg:py-2 m-2 bg-light dark:bg-dark-bg2 text-dark dark:text-light md:text-lg lg:text-xl'
+    const buttonCSS = 'text-center rounded-sm px-2 lg:px-3 py-1 lg:py-1 m-2 sm:text-base md:text-lg lg:text-xl flex items-center gap-2 border border-light text-light bg-transparent dark:text-dark-bg2 dark:border-dark-bg2'
+
+    const themeCSS = 'bg-dark-bg2 text-gray-400 dark:bg-light-bg dark:text-black'
+
+
+    /* 
+    bg-light dark:bg-dark-bg2 text-dark dark:text-light
+    */
 
     return (
         <>
-            {/* Hover Effect */}
 
-            <div className='opacity-0 group-hover:opacity-100 pt-8 pb-3 flex flex-col justify-between'>
-                <span className='text-3xl md:text-3xl lg:text-3xl font-bold text-dark dark:text-gray-300'>
+            <div className={`${themeCSS}  pt-6 pb-5 flex flex-col px-5 rounded-3xl lg:w-[500px] sm:w-full shadow-md shadow-[#525151] hover:shadow-xl hover:shadow-[#525151] group`}>
+                
+                <span className='cursor-default text-xl md:text-2xl lg:text-3xl font-bold text-gray-300 dark:text-black'>
                     {title}
                 </span>
-                {/* <span className='text-sm md:text-lg text-dark dark:text-light px-3'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quam?
-                </span> */}
-                <div className='pt-4 text-center text-light flex justify-evenly'>
-                    <a href={demo} target='_blank'>
-                        <button className={`${buttonCSS} flex items-center gap-2`}>
-                            <span className='text-lg md:text-xl'>Demo</span>
-                            <BiLinkExternal />
-                        </button>
-                    </a>
-                    <a href={github} target='_blank'>
-                        <button className={`${buttonCSS} flex items-center gap-2`} >
-                            <span className='text-lg md:text-xl'>Code</span>
-                            <FiGithub />
-                        </button>
-                    </a>
+
+                <div className='div2 pt-4'>
+                    <div className='flex flex-col gap-2 lg:flex-row lg:justify-between '>
+                        <div className='lg:w-[270px] lg:h-[200px] w-[98%] md:h-[200px] sm:h-[40vh] h-[230px] overflow-hidden border-solid border-2 border-dark-bg-2  dark:border-dark rounded-xl  '>
+                            <img src={img} className=' w-full h-full object-cover hover:drop-shadow-xl group-hover:scale-110 transition duration-500 ' />
+                        </div>
+                        {/* Buttons */}
+                        <div className='text-center text-light flex lg:flex-col lg:items-center gap-8 lg:gap-10 lg:justify-evenly justify-center lg:pr-3'>
+                            <a href={demo} target='_blank'>
+                                <button className={`${buttonCSS} hover:bg-light hover:text-dark hover:dark:bg-dark-bg2 hover:dark:text-light`}>
+                                    <span className='text-sm sm:text-base md:text-lg'>Demo</span>
+                                    <BiLinkExternal />
+                                </button>
+                            </a>
+                            <a href={github} target='_blank'>
+                                <button className={`${buttonCSS} hover:bg-light hover:text-dark hover:dark:bg-dark-bg2 hover:dark:text-light `} >
+                                    <span className='text-sm sm:text-base md:text-lg'>Code</span>
+                                    <FiGithub />
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    
                 </div>
 
-                <div className='mt-4 flex flex-wrap gap-2 text-xs md:text-xs justify-center'>
-                    {tags.map(item => (
-                        <span key={item}
-                            className='inline-block mx-1 bg-slate-300 py-1 px-2 rounded-md dark:bg-slate-900'
-                        >
-                            {item}
-                        </span>
-                    ))}
+                
+                    
+                    
+                <div className="div 3 lg:pt-4 pt-2">
+                    <div className='flex flex-col'>
+                        {/* Desc */}
+                        <div>
+                            <span className='cursor-default text-sm sm:text-base' >
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fuga architecto facere non. Libero, quaerat dolor? Nulla iusto est ipsam!
+                            </span>
+                        </div>
+
+                        <div className='mt-4 flex flex-wrap gap-2 text-[10px] sm:text-xs'>
+                            {tags.map(item => (
+                                <span key={item}
+                                    className='inline-block mx-1 bg-slate-300 text-slate-900 py-1 px-2 rounded-md dark:bg-slate-900 dark:text-slate-300 '
+                                >
+                                    {item}
+                                </span>
+                            ))}
+                        </div>
+
+                    </div>
                 </div>
+                
+                
             </div>
         </>
     )

@@ -8,12 +8,12 @@ const Experiences = ({theme}) => {
 
 
     return (
-        <div name="projects" className={`${themeCSS} w-full h-fit px-10 pt-[130px]`}>
+        <div name="experiences" className={`${themeCSS} w-full h-fit px-10 pt-[130px]`}>
             {/* Container */}
             <div className='max-w-[1000px] md:ml-10 lg:mx-auto p-4 flex flex-col'>
                 <div>
                     <p className='text-4xl sm:text-5xl font-bold inline border-b-4 border-dark-sign dark:border-light-sign pb-1'>
-                        Experiences
+                        Experience
                     </p>
                     <p className='text-base sm:text-xl font-medium mt-3'>These are some of my</p>
                 </div>
@@ -24,7 +24,7 @@ const Experiences = ({theme}) => {
                     {experiencesData.map(experience => (
                         <>
                             {/* <!-- Timeline Item --> */}
-                            <div className="relative pl-8 sm:pl-32 py-6 group" >
+                            <div className="relative pl-8 sm:pl-32 py-6 group" key={experience.id} >
                                 {/* <!-- Purple label --> */}
                                 <div className="cursor-default text-sm sm:text-base font-semibold text-slate-800 dark:text-slate-400 sm:mb-0" key={experience.id}> {experience.post} </div>
                                 {/* <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) --> */}

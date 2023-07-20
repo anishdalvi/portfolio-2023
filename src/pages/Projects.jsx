@@ -23,20 +23,22 @@ const Projects = () => {
                 </div>
 
                 {/* Grid Container */}
-                <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-8 mt-10'>
+                <div className='grid md:grid-cols-2 lg:grid-cols-2 gap-10 sm:gap-8 mt-10'>
 
                     {
                         projects.map((item, i) => (
                             <div
-                                style={{ backgroundImage: `url(${item.img})` }}
+                               
                                 key={i}
-                                className='shadow-lg shadow-[#525151] group container rounded-md content-div flex justify-center text-center'>
-                                {/* content-div is used for Hover feature */}
+            
+                                className=' group container rounded-3xl flex justify-center '>
+                    
                                 <ProjectItem
                                     title={item.title}
                                     demo={item.demo}
                                     github={item.github}
                                     tags={item.tags}
+                                    img={item.img}
                                 >
 
                                 </ProjectItem>

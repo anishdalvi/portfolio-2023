@@ -57,6 +57,11 @@ const Navbar = ({ theme }) => {
                                 Projects
                             </li>
                         </Link>
+                        <Link to="experiences" smooth={true} duration={500}>
+                            <li className={`${menuLinkHover}`}>
+                                Experience
+                            </li>
+                        </Link>
                         <Link to="contact" smooth={true} duration={500}>
                             <li className={`${menuLinkHover}`}>
                                 Contact
@@ -93,6 +98,11 @@ const Navbar = ({ theme }) => {
                         <Link onClick={handleClick} to="projects" smooth={true} duration={500} className='py-3'>
                             <li className={`${menuLinkMobileHover}`}>
                                 Projects
+                            </li>
+                        </Link>
+                        <Link onClick={handleClick} to="experiences" smooth={true} duration={500} className='py-3'>
+                            <li className={`${menuLinkMobileHover}`}>
+                                Experience
                             </li>
                         </Link>
                         <Link onClick={handleClick} to="contact" smooth={true} duration={500} className='py-3'>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import AnishImg from '../assets/anish_img2.jpg'
-import { socials, socialsMobile } from '../data/socials'
+import { socialsMobile } from '../data/socials'
 import { FaGithub } from 'react-icons/fa'
 
 
