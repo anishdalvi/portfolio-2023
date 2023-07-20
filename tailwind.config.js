@@ -29,6 +29,8 @@ export default {
         github: "#17202A",
         email: "#D44638",
         instagram: "#c13584",
+        "light-bg": "#EBE6E4",
+        "dark-bg2": "#242424",
       },
       screens: {
         d0: {

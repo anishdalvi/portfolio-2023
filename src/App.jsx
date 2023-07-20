@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import { Footer, Navbar } from './components/index'
-import { Home, About, Skills, Projects, Contact } from './pages/index'
+import { Home, About, Skills, Projects, Contact, Experiences } from './pages/index'
 import { motion, useScroll, useSpring } from "framer-motion";
 import { MdOutlineDarkMode, MdLightMode } from 'react-icons/md'
 
@@ -64,6 +64,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Experiences theme={theme} />
         <Contact />
         <Footer />
       </div>
