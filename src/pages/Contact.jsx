@@ -8,8 +8,8 @@ const Contact = () => {
     const URL = import.meta.env.VITE_FORM_LINK
 
     return (
-        <div name='contact' className={`w-full h-fit ${themeCSS} flex justify-center items-center px-20 pt-[130px] pb-[100px]`}>
-            <form action={`${URL}`} method='POST' className='flex flex-col  w-full max-w-[600px]'>
+        <div name='contact' className={`w-full h-fit ${themeCSS} flex justify-center items-center px-14 pt-[130px] pb-[100px]`}>
+            <form action={`${URL}`} method='POST' className='flex flex-col w-full max-w-[600px]'>
                 <div className='pb-8'>
                     <p className='text-4xl sm:text-5xl font-bold inline border-b-4 border-dark-sign dark:border-light-sign'>
                         Contact
