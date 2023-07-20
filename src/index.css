@@ -29,7 +29,9 @@
   
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #3f3f3f;
+    /* Same as dark bg */
+    /* background: #242424; */
+    background: #363636;
     
 }
 
