@@ -38,11 +38,13 @@ const Home = () => {
                         <div className='flex md:hidden mt-2 justify-center gap-2 '>
                             {socialsMobile.map(social => (
                                 <ul key={social.title}>
-                                    <li className={`hover:bg-light-sign rounded-full p-3 duration-300 text-2xl 
+                                    <a href={social.link || `mailto:${social.email}`} target='_blank'>
+                                        <li className={`hover:bg-light-sign rounded-full p-3 duration-300 text-2xl 
                                     text-${social.color || social.bgColor}
                                     hover:text-dark-bg-color`}>
-                                        {social.icon}
-                                    </li>
+                                            {social.icon}
+                                        </li>
+                                    </a>
                                 </ul>
                             ))}
                         </div>

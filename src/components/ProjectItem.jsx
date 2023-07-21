@@ -9,10 +9,6 @@ const ProjectItem = ({ title, demo, github, tags, img, desc }) => {
     const themeCSS = 'bg-dark-bg2 text-gray-400 dark:bg-light-bg dark:text-black'
 
 
-    /* 
-    bg-light dark:bg-dark-bg2 text-dark dark:text-light
-    */
-
     return (
         <>
 

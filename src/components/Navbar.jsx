@@ -122,7 +122,7 @@ const Navbar = ({ theme }) => {
                         <li className='flex w-[180px] h-[60px] justify-between items-center ml-[-110px] hover:ml-[-18px] duration-300' >
                             <a
                                 className={`hover:bg-${social.bgColor} hover:text-white flex justify-between items-center w-full p-3 hover:bg-${social.bgColor}`}
-                                href=""
+                                href={social.link || `mailto:${social.email}` } target='_blank'
                             >
                                 <span className='font-bold'>
                                     {social.title}
