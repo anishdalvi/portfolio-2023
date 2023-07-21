@@ -1,6 +1,6 @@
 import React from 'react'
 import { HiArrowNarrowRight } from 'react-icons/hi'
-import AnishImg from '../assets/anish_img2.jpg'
+import AnishImg from '../assets/anish_image.jpeg'
 import { socialsMobile } from '../data/socials'
 import { FaGithub } from 'react-icons/fa'
 
@@ -34,6 +34,7 @@ const Home = () => {
                 <div className="intro-img">
                     <div className="anish-img w-[280px] d0:w-[260px] d1:w-[280px] md:w-[300px] lg:w-[350px]  ">
                         <img src={AnishImg} alt="Image" className='w-full rounded-full' />
+                        {/* <img src="https://github.com/anishdalvi/Portfolio-2022/blob/master/images/2023/anish_img.jpg?raw=true" alt="Image" className='w-full rounded-full' /> */}
 
                         <div className='flex md:hidden mt-2 justify-center gap-2 '>
                             {socialsMobile.map(social => (

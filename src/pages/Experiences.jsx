@@ -21,7 +21,7 @@ const Experiences = ({theme}) => {
                 {/* Timeline Container */}
                 <div className='max-w-[700px]  mx-auto mt-10'>
 
-                    {experiencesData.map(experience => (
+                    {[...experiencesData].reverse().map(experience => (
                         
                             <div className="relative pl-8 sm:pl-32 py-6 group" key={experience.id} >
                                 {/* <!-- Purple label --> */}
@@ -37,7 +37,18 @@ const Experiences = ({theme}) => {
                                 <div className="text-slate-600 dark:text-slate-500 cursor-default text-sm sm:text-base">{experience.desc}</div>
                             </div>
                         
-                    )) }
+                    ))}
+                    
+
+                    {/*  Reversing syntax */}
+
+                    {/* { 
+                        [...experiencesData].reverse().map((experience => (
+                            <h1>
+                                {experience.date}
+                            </h1>
+                        )))} */}
+                    
 
                     
 
