@@ -41,11 +41,11 @@ const Experiences = ({theme}) => {
                                 <div className="text-slate-600 dark:text-slate-400 cursor-default text-sm sm:text-base">{experience.desc}</div>
 
                             {experience.certificate && 
-                                <div className='border-2 border-slate-700 dark:border-slate-400 text-slate-300 bg-slate-700 dark:text-slate-800 dark:bg-slate-400 w-max px-[4px] py-[1px] sm:px-2 sm:py-1 rounded-md cursor-pointer text-[13px] mt-2 hover:bg-transparent hover:text-slate-700 dark:hover:bg-transparent dark:hover:text-slate-400 font-medium transition-all duration-300'>
-                                    <a href={experience.certificate} download target='_blank'>
+                                <a href={experience.certificate} download target='_blank'>
+                                    <div className='border-2 border-slate-700 dark:border-slate-400 text-slate-300 bg-slate-700 dark:text-slate-800 dark:bg-slate-400 w-max px-[4px] py-[1px] sm:px-2 sm:py-1 rounded-md cursor-pointer text-[13px] mt-2 hover:bg-transparent hover:text-slate-700 dark:hover:bg-transparent dark:hover:text-slate-400 font-medium transition-all duration-300'>
                                         View Certificate
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
                             }
 
                             </div>
