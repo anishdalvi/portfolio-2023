@@ -1,4 +1,6 @@
 import React from 'react'
+import { useEffect } from 'react'
+import { useRef } from 'react'
 import { AiOutlineSend } from 'react-icons/ai'
 
 const Contact = () => {
@@ -7,14 +9,17 @@ const Contact = () => {
 
     const URL = import.meta.env.VITE_FORM_LINK
 
+    const ref = useRef()
+
     return (
         <div name='contact' className={`w-full h-fit ${themeCSS} flex justify-center items-center px-14 pt-[130px] pb-[100px]`}>
-            <form action={`${URL}`} method='POST' className='flex flex-col w-full max-w-[600px]'>
+            <form action={`${URL}`} method='POST' id='contactForm' ref={ref} className='flex flex-col w-full max-w-[600px]'>
                 <div className='pb-8'>
                     <p className='text-4xl sm:text-5xl font-bold inline border-b-4 border-dark-sign dark:border-light-sign'>
                         Contact
                     </p>
                     <p className='text-base sm:text-xl font-medium mt-3'> Wanna talk? Fill up the below form to get in touch </p>
+                    <span className='text-base sm:text-lg font-bold mt-2'> Trust Me. This form works </span> <span className='italic text-sm sm:text-base'>(thanks to getform.io)</span>
                 </div>
 
 
