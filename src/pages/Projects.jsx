@@ -39,6 +39,7 @@ const Projects = () => {
                                     github={item.github}
                                     tags={item.tags}
                                     img={item.img}
+                                    desc={item.desc}
                                 >
 
                                 </ProjectItem>

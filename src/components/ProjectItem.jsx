@@ -2,7 +2,7 @@ import React from 'react'
 import { BiLinkExternal } from 'react-icons/bi'
 import { FiGithub } from 'react-icons/fi'
 
-const ProjectItem = ({ title, demo, github, tags, img }) => {
+const ProjectItem = ({ title, demo, github, tags, img, desc }) => {
 
     const buttonCSS = 'text-center rounded-sm px-2 lg:px-3 py-1 lg:py-1 m-2 sm:text-base md:text-lg lg:text-xl flex items-center gap-2 border border-light text-light bg-transparent dark:text-dark-bg2 dark:border-dark-bg2'
 
@@ -54,7 +54,11 @@ const ProjectItem = ({ title, demo, github, tags, img }) => {
                         {/* Desc */}
                         <div>
                             <span className='cursor-default text-sm sm:text-base' >
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fuga architecto facere non. Libero, quaerat dolor? Nulla iusto est ipsam!
+                                
+                                {
+                                    (desc.length > 150) ? desc.substring(0, 150) + '...' : desc
+                                     
+                                }
                             </span>
                         </div>
 

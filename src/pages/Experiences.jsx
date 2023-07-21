@@ -22,11 +22,10 @@ const Experiences = ({theme}) => {
                 <div className='max-w-[700px]  mx-auto mt-10'>
 
                     {experiencesData.map(experience => (
-                        <>
-                            {/* <!-- Timeline Item --> */}
+                        
                             <div className="relative pl-8 sm:pl-32 py-6 group" key={experience.id} >
                                 {/* <!-- Purple label --> */}
-                                <div className="cursor-default text-sm sm:text-base font-semibold text-slate-800 dark:text-slate-400 sm:mb-0" key={experience.id}> {experience.post} </div>
+                                <div className="cursor-default text-sm sm:text-base font-semibold text-slate-800 dark:text-slate-400 sm:mb-0"> {experience.post} </div>
                                 {/* <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) --> */}
                                 <div className="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-400  sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-light-sign  dark:after:bg-dark-sign  after:border-4 after:box-content after:border-slate-500 dark:after:border-slate-200 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
 
@@ -37,7 +36,7 @@ const Experiences = ({theme}) => {
                                 {/* <!-- Content --> */}
                                 <div className="text-slate-600 dark:text-slate-500 cursor-default text-sm sm:text-base">{experience.desc}</div>
                             </div>
-                        </>
+                        
                     )) }
 
                     
