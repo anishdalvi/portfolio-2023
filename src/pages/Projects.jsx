@@ -26,7 +26,7 @@ const Projects = () => {
                 <div className='grid md:grid-cols-2 lg:grid-cols-2 gap-10 sm:gap-8 mt-10'>
 
                     {
-                        projects.map((item, i) => (
+                        [...projects].reverse().map((item, i) => (
                             <div
                                
                                 key={i}
