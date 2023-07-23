@@ -26,7 +26,7 @@ const About = () => {
                     </div>
                     <div className="font-medium">
                         <p>
-                            Keen Coder. Currently, I am pursuing BE in Information Technology from Vidyavardhini's College of Engineering and Technology, Vasai. I have made many websites using the skills mentioned below and lately I have started building RESPONSIVE websites. I have created many posters and designs using Photoshop and Adobe Illustrator. Also.....
+                            Keen Coder. Currently, I am pursuing BE in Information Technology from Vidyavardhini's College of Engineering and Technology, Vasai. I have made many websites using the skills mentioned below and lately I have started building RESPONSIVE websites. I have created many posters and designs using Photoshop and Adobe Illustrator. 
                         </p>
                     </div>
                 </div>

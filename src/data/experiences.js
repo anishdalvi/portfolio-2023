@@ -3,7 +3,7 @@ export const experiencesData = [
     id: 0,
     post: "Technical Team Member",
     company: "Hackathon Committee",
-    desc: "I was a part of VCET Hackathon 2021 reloaded where I designed many posters and banners for the Virtual Hackathon Event",
+    desc: "We had great success in organizing the VCET's Virtual Hackathon 2021 Reloaded. I created many posters and banners for the event",
     date: "2021-2022",
     companyUrl: "https://www.instagram.com/hackathon_vcet",
     certificate:
@@ -13,7 +13,7 @@ export const experiencesData = [
     id: 1,
     post: "Graphic Design Intern",
     company: "Your Digimate",
-    desc: "I have created a logo for a company during this Internship and received a Stipend. Got hands on experience on tools like Adobe illustrator and Photoshop along with an oppurtunity to interact with my client.",
+    desc: "Designed a logo for a company that gained practical experience using softwares like Adobe Illustrator and Photoshop and had the chance to communicate with my client.",
     date: "May 2022",
     companyUrl: "https://www.linkedin.com/company/your-digimate",
     certificate:
@@ -41,6 +41,16 @@ export const experiencesData = [
   },
   {
     id: 4,
+    post: "Graphics Head",
+    company: "I-Tech Committee",
+    desc: "The Magazine Committee, where I developed layouts for particular magazine pages",
+    date: "2022-2023",
+    companyUrl: "https://www.instagram.com/ecell_vcet",
+    magazine:
+      "https://vcet.edu.in/wp-content/uploads/2023/07/ITECH-22-23-MAGAZINE-FINAL.pdf",
+  },
+  {
+    id: 5,
     post: "Joint Deputy CR Head",
     company: "E-Cell VCET",
     desc: "Being in Corporate Relations Team, I had a number of resonsibilities inorder to make the event a grand success. We organised the VVSF event, which was a big success.",

@@ -22,7 +22,7 @@ const Home = () => {
                         Also, a passionate Graphic Designer
                     </p>
                     <div>
-                        <a href="https://drive.google.com/file/d/1nzKWOtqzsNp370zjxiiH-O7iAK9azsBs/view?usp=drive_link" target='_blank'>
+                        <a href="https://drive.google.com/file/d/11dVy6mjoI8dsSkwYdb78ZVOC5xtaHF9H/view?usp=drive_link" target='_blank'>
                             <button className='text-dark dark:text-light  hover:cursor-pointer sm:py-3 sm:px-6 my-2 flex items-center gap-2 font-bold border-black border-2 dark:border-light hover:bg-light-sign dark:hover:bg-[black] duration-200 py-1 px-3 group'>
                                 Resume
                                 <span className='group-hover:rotate-90 duration-300'>

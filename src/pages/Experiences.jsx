@@ -48,13 +48,18 @@ const Experiences = ({theme}) => {
                                 </a>
                             }
 
+                            {experience.magazine && 
+                                <a href={experience.magazine} download target='_blank'>
+                                    <div className='border-2 border-slate-700 dark:border-slate-400 text-slate-300 bg-slate-700 dark:text-slate-800 dark:bg-slate-400 w-max px-[4px] py-[1px] sm:px-2 sm:py-1 rounded-md cursor-pointer text-[13px] mt-2 hover:bg-transparent hover:text-slate-700 dark:hover:bg-transparent dark:hover:text-slate-400 font-medium transition-all duration-300'>
+                                        View Magazine
+                                    </div>
+                                </a>
+                            }
+
                             </div>
                         
                     ))}
-                    
-                    {/* 
-                    text-slate-300 bg-slate-700 dark:text-slate-800 dark:bg-slate-400 w-max px-2 py-1 rounded-md cursor-pointer text-sm mt-2 hover:bg-slate-800 hover:text-slate-300 dark:hover:bg-slate-300 dark:hover:text-slate-700 font-medium
-                    */}
+                
 
                     {/*  Reversing syntax */}
 
