@@ -9,7 +9,7 @@ import { MdOutlineDarkMode, MdLightMode } from 'react-icons/md'
 
 function App() {
 
-  const [theme, setTheme] = useState(localStorage.theme)
+  const [theme, setTheme] = useState('dark' || localStorage.theme)
   const { scrollYProgress } = useScroll();
 
   const scaleX = useSpring(scrollYProgress, {
