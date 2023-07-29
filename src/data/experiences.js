@@ -53,7 +53,7 @@ export const experiencesData = [
     id: 5,
     post: "Joint Deputy CR Head",
     company: "E-Cell VCET",
-    desc: "Being in Corporate Relations Team, I had a number of resonsibilities inorder to make the event a grand success. We organised the VVSF event, which was a big success.",
+    desc: "Being in Corporate Relations Team, I had a number of responsibilities in order to make the event a grand success. We organized the VVSF event, which was a big success.",
     date: "2022-2023",
     companyUrl: "https://www.instagram.com/ecell_vcet",
     certificate: "",

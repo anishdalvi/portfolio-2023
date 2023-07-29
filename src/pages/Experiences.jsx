@@ -15,7 +15,7 @@ const Experiences = ({theme}) => {
                     <p className='text-4xl sm:text-5xl font-bold inline border-b-4 border-dark-sign dark:border-light-sign pb-1'>
                         Experience
                     </p>
-                    <p className='text-base sm:text-xl font-medium mt-3'>These are some of my</p>
+                    <p className='text-base sm:text-xl font-medium mt-3'>Here are some of the experiences that have shaped my journey so far</p>
                 </div>
 
                 {/* Timeline Container */}
